@@ -1,0 +1,32 @@
+{
+ /*
+ Welcome to the content.json
+ here is where you need these specific fields:
+ Format
+ Changes
+
+ Optional things like ConfigSchema and DynamicTokens can be placed here
+ let's go into the Format:
+ */
+ "Format": "2.9.0", //this is the current CONTENT PATCHER version as of June 3rd, 2026
+ "Changes": [
+  /*
+  "CHANGES" is a <List> dictated by the [] (square brackets)
+  This is where you put things like:
+  "Action": "Load"
+  "Action": "EditData",
+  "Action": "Include",
+  "Action": "EditMap",
+  "Action": "EditImage"
+
+  etc
+  in this format, I will be writing everything in their own separate JSON files
+  so I will be using all "INCLUDES" in the CONTENT.JSON
+  */
+  {
+   "LogName": "INCLUDE LOAD PATCH",
+   "Action": "Include",
+   "FromFile": "LoadPatches.json"
+  }
+ ]
+}

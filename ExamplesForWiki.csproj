@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<EnableHarmony>true</EnableHarmony>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>latestmajor</LangVersion>
+		<ModFolderName>ExamplesForWiki</ModFolderName>
+		<Name>Examples For Wiki C# Component</Name>
+		<Authors>Aviroen</Authors>
+		<Description>Mostly Content Patcher examples with a smidge of C# because I was too lazy to make a blank folder.</Description>
+		<UniqueId>Aviroen.ExamplesForWiki</UniqueId>
+		<MinimumGameVersion>1.6.15</MinimumGameVersion>
+		<MinimumApiVersion>4.5.2</MinimumApiVersion>
+		<UpdateKeys>Nexus:46346</UpdateKeys>
+		<Version>1.0.0</Version>
+		<ContentPacks_VersionBehavior>Set</ContentPacks_VersionBehavior>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Leclair.Stardew.ModManifestBuilder" Version="2.4.1" />
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="[CP] ExamplesForWiki\" />
+  </ItemGroup>
+
+</Project>

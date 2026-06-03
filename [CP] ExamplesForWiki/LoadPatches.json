@@ -1,0 +1,21 @@
+{
+ "Changes": [
+  /*
+  As you can see in every single "INCLUDED" file, I start with { Encompassing "Changes": [] }
+  You DO NOT need format for files that you're including
+  The FORMAT field is specifically for the content.json
+  */
+  {
+   "LogName": "LOAD EXAMPLES",
+   "Action": "Load",
+   "Target": "Data/Events/{{ModId}}_Map", //this specific target is loading a blank file to Data/Events/<YOUR MOD ID>_Map
+   "FromFile": "Blank.json"
+  },
+  {
+   "LogName": "LOAD EXAMPLES",
+   "Action": "Load",
+   "Target": "Maps/{{ModId}}_Map", //this specific target is loading a blank file to Data/Events/<YOUR MOD ID>_Map
+   "FromFile": "Blank.json"
+  }
+ ]
+}

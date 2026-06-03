@@ -1,0 +1,21 @@
+{
+  /*
+   | This file is automatically updated by ModManifestBuilder
+   | when the project is compiled.
+   | 
+   | Changes made to this file may be overwritten.
+   | 
+   */
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "UniqueID": "Aviroen.ExamplesForWiki",
+  "Name": "Examples For Wiki C# Component",
+  "Author": "Aviroen",
+  "Version": "1.0.0-Debug",
+  "Description": "Mostly Content Patcher examples with a smidge of C# because I was too lazy to make a blank folder.",
+  "MinimumApiVersion": "4.5.2",
+  "MinimumGameVersion": "1.6.15",
+  "EntryDll": "ExamplesForWiki.dll",
+  "UpdateKeys": [
+    "Nexus:46346"
+  ]
+}
