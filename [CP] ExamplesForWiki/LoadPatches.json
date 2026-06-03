@@ -1,21 +1,51 @@
 {
  "Changes": [
   /*
+  https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/action-load.md
   As you can see in every single "INCLUDED" file, I start with { Encompassing "Changes": [] }
   You DO NOT need format for files that you're including
   The FORMAT field is specifically for the content.json
   */
   {
-   "LogName": "LOAD EXAMPLES",
+   "LogName": "LOAD EXAMPLES BLANK FILE FOR EVENTS FOR MAPS",
    "Action": "Load",
    "Target": "Data/Events/{{ModId}}_Map", //this specific target is loading a blank file to Data/Events/<YOUR MOD ID>_Map
+   "FromFile": "Blank.json" //blank.json is used here to create a virtual "file" for you to Action:Editdata on later
+  }, // < for every new { "Action" } you need to make sure that you're separating them with commas, most IDEs will auto format this, or give you a funny squiggly
+  {
+   "LogName": "LOAD EXAMPLES BLANK TMX FILE FOR MAPS",
+   "Action": "Load",
+   "Target": "Maps/{{ModId}}_Map", //this specific target is loading a blank file to Maps/<YOUR MOD ID>_Map
+   "FromFile": "Blank.tmx" //assume that this is a real Tiled.tmx file, i'm too lazy to make one
+  } // purposefully left out a comma here to make sure you're paying attention THIS WILL BE ON THE TEST!!
+  {
+   "LogName": "LOAD EXAMPLES BLANK CHARACTER DIALOGUE FILE",
+   "Action": "Load",
+   "Target": "Characters/Dialogue/{{ModId}}", //this specific target is loading a blank file to Characters/Dialogue/<YOUR MOD ID>
    "FromFile": "Blank.json"
   },
   {
-   "LogName": "LOAD EXAMPLES",
+   "LogName": "LOAD EXAMPLES BLANK CHARACTER MARRIAGE DIALOGUE FILE",
    "Action": "Load",
-   "Target": "Maps/{{ModId}}_Map", //this specific target is loading a blank file to Data/Events/<YOUR MOD ID>_Map
+   "Priority": "Low", //Priorities are best for when you expect OTHERS to edit the same file, or that you're creating a new NPC from scratch and expect others to either add dialogue or edit 
+   "Target": "Characters/Dialogue/MarriageDialogue{{ModId}}", //this specific target is loading a blank file to Characters/Dialogue/MarriageDialogue<YOUR MOD ID>
    "FromFile": "Blank.json"
+  },
+  /*
+  How many places should you load a blank.json file to?
+  You should mainly load for things specific to what you're doing
+  Take a look at the Unpacked version to see if you actually *NEED* to load a blank or not
+  Ex:
+  There is no Data/Events/Caldera.json, but the map exists! Say you want to place an event there, it'll tell you "nope, can't do it, file doesn't exist"
+  If you're creating a brand new NPC you *WILL* need to create the npc specific .jsons in their respective places
+  If you don't know where, there are many other guides to tell you for specifics
+  Note how they don't ALWAYS have to be .jsons to load
+  */
+  {
+   "Action": "LOAD EXAMPLE PORTRAIT TO THE WIZARD",
+   "Priority": "Low",
+   "Target": "Portraits/Wizard_Aviroen", //this makes a specific call for the Wizard, if i wanted to use this in events i can use changePortrait Wizard Aviroen THIS DOES NOT OVERRIDE VANILLA PORTRAITS / notice how in the event call it ignores the UNDER_SCORE, it gets turned into a space
+   "FromFile": "Assets/Wizard.png"
   }
  ]
 }

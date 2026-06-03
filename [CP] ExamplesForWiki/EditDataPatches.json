@@ -1,0 +1,42 @@
+{
+ "Changes": [
+  /*
+  https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/action-editdata.md
+  Welcome to the EditData!
+  Since we've previously Action:Loaded, let's go ahead and Action:EditData them!
+  */
+  {
+   "LogName": "CREATING AN EVENT",
+   "Action": "EditData",
+   "Target": "Data/Events/{{ModId}}_Map",
+   "Entries": {
+    /* ENTRIES: https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/action-editdata.md#entries
+
+ "An entry is a top-level block of data in the target data (i.e. a key/value pair in a dictionary or a value in a list)."
+    "what the heck does that mean?"
+    Most of the time when you look into something you'll see that it looks like this:
+    "<KEY>": "<SOME NONSENSE>"
+    depending on where/what you're using it on, the key has many ways, edd boy
+    since we're in the event scripting, i'll give you an example
+    */
+    "{{ModId}}_Your_Event_ID_Here/SOME PRECONDITION/MAYBE ANOTHER PRECONDITION/OH BUT WAIT A THIRD PRECONDITION/": "MUSIC/VIEWPORT/ACTORS/the_rest_of_your_event_scripting_here"
+    //https://stardewvalleywiki.com/Modding:Event_data
+   }
+  },
+  //you're playing with the big bois now *snaps fingers* *spawns a snake*
+  {
+   "LogName": "A crime to events",
+   "Action": "EditData",
+   "Target": "Data/Events/AbandonedJojaMart", //MA, THEY'RE MAKING A CRIME ON A VANILLA EVENT!!!
+   "TextOperations": [ //textoperations is a <List> https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/text-operations.md
+    {
+     "Operation": "ReplaceDelimited",
+     "Target": [ "Entries", "missingBundleComplete" ],
+     "Search": "communityCenter",
+     "Value": "Plums",
+     "Delimiter": "/"
+    }
+   ]
+  }
+ ]
+}

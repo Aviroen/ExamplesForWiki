@@ -1,5 +1,6 @@
 {
  /*
+ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide.md#create-the-content-pack
  Welcome to the content.json
  here is where you need these specific fields:
  Format
@@ -27,6 +28,11 @@
    "LogName": "INCLUDE LOAD PATCH",
    "Action": "Include",
    "FromFile": "LoadPatches.json"
+  },
+  {
+   "LogName": "INCLUDE LOAD PATCH",
+   "Action": "Include",
+   "FromFile": "EditDataPatches.json"
   }
  ]
 }
