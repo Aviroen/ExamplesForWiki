@@ -1,0 +1,39 @@
+{
+ "Changes": [
+  /*/
+  'alright avi why are we here'
+
+  so you understand content patcher, yeah? you really think you know how to textoperation your way around a cow, huh?
+  let's go into the niche things for those of you who have too many assets and very little time
+  first up
+
+  localtokens
+
+  localtokens can do every single action in the template, so if you have multiple items/npcs/animals, whatever, you can template it so that you have less margin of error 
+  */
+  {
+   "Action": "Include",
+   "FromFile": "Templates/DrawTheRestOfTheOwlShinji.json",
+   "LocalTokens": {
+    "ANIMAL": "Shjorbk", //this is the name of my animal, it AUTOMATICALLY gets appended to {{ModId}}_ because i set it that way in the template
+    "HOUSE": "Barn", //what have i learned as a crimelord?
+    "PRICE": "5000", //you can put ConfigSchema tokens into here
+    "SELLPRICE": "4000", //what is a configschema
+    "REQBUILDING": "Barn", //so my content.json has a TalkingHeads configschema
+    "XSOURCERECT": "32",//so because my allowedvalues are : BigHeaded and SmallHeaded
+    "YSOURCERECT": "0",//if i replaced any of these fields that takes a STRING
+    "UNLOCKCONDITION": "{{TalkingHeads2}}",//or even a true/false like this one, TalkingHeads2 defaults to <FALSE> so this will set this UNLOCKCONDITION to ALWAYS FALSE, unless the player toggles this on in GMCM or their config.json
+    "DAYSTOMATURE": "14",
+    "DAYSTOPRODUCE": "5",
+    "PRODUCEITEMID": "128",
+    "DELUXEITEMID": "162",
+    "USEFLIPPEDLR": "true",
+    "SPRITEWIDTH": "32",
+    "SPRITEHEIGHT": "32",
+    "SLEEPFRAME": "9",
+    "TRADEITEMID": "(O){{ModId}}_Shorbk",
+    "TRADEITEMCOUNT": "5"
+   }
+  }
+ ]
+}

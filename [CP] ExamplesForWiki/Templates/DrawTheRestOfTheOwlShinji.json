@@ -1,0 +1,121 @@
+{
+ "Changes": [
+  /*
+  let's say you're making A LOT OF ANIMALS
+  like a lot of animals
+  an ungodly amount of animals
+
+  the less amount of times you have to copy and paste the gawdawful amount of fields in Data/FarmAnimals the better
+  so let me just throw down the ENTIRETY of what i use for my shjorbk from Voidsent
+  */
+  {
+   "Action": "Load",
+   "Target": "{{ModId}}/Animals/{{ANIMAL}}", //this is loading your animal texture INDIVIDUALLY to your specific asset
+   "FromFile": "Assets/Animals/{{ANIMAL}}.png"//this is YOUR ACTUAL FILE STRUCTURE
+  },
+  {
+   "Action": "EditData",
+   "Target": "Data/FarmAnimals",
+   "Entries": {
+    "{{ModId}}_{{ANIMAL}}": { //localtokens need to be slightly different than dynamic tokens, named differently, every single LOCALTOKEN that i have here is in ALL CAPITAL LETTERS because i'm lazy and i don't like typing symbols for my localtokens
+     "DisplayName": "{{i18n:{{ANIMAL}}.Name}}", //this pulls the ANIMAL localtoken and creates an i18n <KEY> so say you named this animal BOB the i18n key is now BOB.Name
+     "House": "{{HOUSE}}", //https://stardewvalleywiki.com/Modding:Buildings
+     "Gender": "MaleOrFemale",//possible genders for your animals
+     "PurchasePrice": "{{PRICE}}",//how much it costs to buy
+     "SellPrice": "{{SELLPRICE}}",//how much you earn if you sell
+     "ShopTexture": "{{ModId}}\\AnimalShop",//this is where you load an icon if it IS NOT PURCHASABLE
+     "ShopSourceRect": {
+      "X": "{{XSOURCERECT}}",//if you put all of your icons in this single file, you can designate the rectangles appropriately
+      "Y": "{{YSOURCERECT}}",
+      "Width": 32,
+      "Height": 16
+     },
+     "ShopDisplayName": "{{i18n:{{ANIMAL}}.Name}}",//this is the name it shows in the shop
+     "ShopDescription": "{{i18n:{{ANIMAL}}.ShopDescription}}",//this is the description it gives in the shop
+     "ShopMissingBuildingDescription": "{{i18n:{{ANIMAL}}.MissingBuilding}}",//this is the string it tells you when you ain't got the building on the farm
+     "RequiredBuilding": "{{REQBUILDING}}",//this is if your animal needs a building prior to even showing up in the shop
+     "UnlockCondition": "{{UNLOCKCONDITION}}",//a game state query
+     "AlternatePurchaseTypes": null,//variants like brown chicken, blue chicken, white chicken, etc
+     "EggItemIds": null,//if your animal has an egg, the (O)object id of what you put into the incubator
+     "IncubationTime": -1,//how long eggs incubate for
+     "IncubatorParentSheetOffset": 1,//incubator sprite index 0 = empty / 1 = small white / 2 = small brown
+     "BirthText": null,//string that tells you when the egg gets hatched
+     "DaysToMature": "{{DAYSTOMATURE}}",//i'm getting tired of describing these
+     "CanGetPregnant": false,
+     "DaysToProduce": "{{DAYSTOPRODUCE}}",
+     "HarvestType": "DropOvernight",
+     "HarvestTool": null,
+     "ProduceItemIds": [
+      {
+       "Id": "Default",
+       "Condition": null,
+       "MinimumFriendship": 0,
+       "ItemId": "{{PRODUCEITEMID}}"
+      }
+     ],
+     "DeluxeProduceItemIds": [
+      {
+       "Id": "Default",
+       "Condition": null,
+       "MinimumFriendship": 0,
+       "ItemId": "{{DELUXEITEMID}}"
+      }
+     ],
+     "ProduceOnMature": false,
+     "FriendshipForFasterProduce": -1,
+     "DeluxeProduceMinimumFriendship": 0,
+     "DeluxeProduceCareDivisor": 5000.0,
+     "DeluxeProduceLuckMultiplier": 1.02,
+     "CanEatGoldenCrackers": true,
+     "ProfessionForHappinessBoost": 2,
+     "ProfessionForQualityBoost": 2,
+     "ProfessionForFasterProduce": -1,
+     "Sound": "wateringCan",
+     "BabySound": null,
+     "Texture": "{{ModId}}\\Animals\\{{ANIMAL}}",
+     "HarvestedTexture": null,
+     "BabyTexture": null,
+     "UseFlippedRightForLeft": "{{USEFLIPPEDLR}}",
+     "SpriteWidth": "{{SPRITEWIDTH}}",
+     "SpriteHeight": "{{SPRITEHEIGHT}}",
+     "UseDoubleUniqueAnimationFrames": false,
+     "SleepFrame": "{{SLEEPFRAME}}",
+     "EmoteOffset": {
+      "X": 0,
+      "Y": 0
+     },
+     "SwimOffset": {
+      "X": 0,
+      "Y": 112
+     },
+     "Skins": null,
+     "ShadowWhenBabySwims": null,
+     "ShadowWhenBaby": null,
+     "ShadowWhenAdultSwims": null,
+     "ShadowWhenAdult": null,
+     "Shadow": {
+      "Visible": false,
+      "Offset": null,
+      "Scale": null
+     },
+     "CanSwim": false,
+     "BabiesFollowAdults": false,
+     "GrassEatAmount": 4,
+     "HappinessDrain": 4,
+     "UpDownPetHitboxTileSize": "1.5, 1.75",
+     "LeftRightPetHitboxTileSize": "1.75, 1.25",
+     "BabyUpDownPetHitboxTileSize": "1, 1",
+     "BabyLeftRightPetHitboxTileSize": "1, 1",
+     "StatToIncrementOnProduce": null,
+     "ShowInSummitCredits": true,
+     "CustomFields": {
+      //"mushymato.LivestockBazaar/BuyFrom.{{ModId}}_Lou": true,
+      //"mushymato.LivestockBazaar/BuyFrom.Marnie": false,
+      //"mushymato.LivestockBazaar/TradeItemId.{{ModId}}_Lou": "{{TRADEITEMID}}",
+      //"mushymato.LivestockBazaar/TradeItemAmount": "{{TRADEITEMCOUNT}}"
+     }
+    }
+   }
+  }
+ ]
+}

@@ -5,6 +5,9 @@
   Welcome to the EditData!
   Since we've previously Action:Loaded, let's go ahead and Action:EditData them!
   */
+
+  //data/events/custom map
+
   {
    "LogName": "CREATING AN EVENT",
    "Action": "EditData",
@@ -23,18 +26,136 @@
     //https://stardewvalleywiki.com/Modding:Event_data
    }
   },
-  //you're playing with the big bois now *snaps fingers* *spawns a snake*
+
+  //data/triggeractions
+
+  {
+   "LogName": "What can i put here what even is good for editdataing that hasn't been shown already",
+   "Action": "EditData",
+   "Target": "Data/TriggerActions", //triggeractions are objects that have separate fields, like "Trigger" being a field, etc
+   "Entries": {
+    "{{ModId}}": { //this is to create the entry object
+     "Id": "{{ModId}}", //this is the identifier of your trigger action
+     "Trigger": "LocationChanged", //https://stardewvalleywiki.com/Modding:Trigger_actions without other frameworks, this is limited to: DayStarted/DayEnding/LocationChanged
+     "Condition": "SEASON fall, DAY_OF_MONTH 18", //https://stardewvalleywiki.com/Modding:Game_state_queries this checks for both that it's [fall] and the [18th] of it
+     "HostOnly": false, //if you want this trigger action to only trigger on the host farmer
+     "MarkActionApplied": true, //this runs this specific trigger action ONLY ONCE AND ONLY EVER ONCE, if it is set to false then it will trigger ALL THE TIME
+     "Actions": [ //actions is a list while action is a single string
+      "AddMoney 1",
+      "AddMoney 2" //if you want more than 1 action you can just add a comma and keep going
+     ]
+    }
+   }
+  },
+
+  //data/locations
+
+  {
+   "LogName": "New Location? No Problem",
+   "Action": "EditData",
+   "Target": "Data/Locations", // since we created the {{ModId}}_Map, let's make it a real location
+   "Entries": {
+    "{{ModId}}_Map": { //making sure that it's the same name as the map we loaded
+     "DisplayName": "{{i18n:MAPDISPLAYNAME}}", //a translation key https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/translations.md
+     "DefaultArrivalTile": { //when you type in debug warp <this map> it spawns you at this x/y coord
+      "X": 0,
+      "Y": 0
+     },
+     "CreateOnLoad": { //todo describe what this means cause idr
+      "MapPath": "Maps\\{{ModId}}_Map", //where you loaded the map
+      "AlwaysActive": false //todo describe what this means cause idr
+     },
+     "MusicDefault": "{{ModId}}_Test" //gonna have a custom music here
+    }
+   }
+  },
+
+  //data/quests
+
+  {
+   "LogName": "Because quests should be used more often, except when they're not special orders",
+   "Action": "EditData", //https://stardewvalleywiki.com/Modding:Quest_data
+   "Target": "Data/Quests", //this might change between 1.6.15 -> 1.6.16 -> 1.???
+   "Entries": {
+    "{{ModId}}": "QUEST TYPE/{{i18n:QUEST TITLE}}/{{i18n:QUEST DESCRIPTION}}/{{i18n:QUEST HINT}}/COMPLETION REQUIREMENTS/SEQUENTIAL QUEST?/MONEY REWARD?/REWARD DESCRIPTION/CANCELLABLE?/{{i18n:REACTION DIALOGUE}}" // slash delimited, meaning /, starting at [index] 0 and going onwards;
+    //what does that look like?
+    //an example from my own mod: 
+    //"{{ModId}}_11Heart.1": "Monster/{{i18n:11Heart.1.Title}}/{{i18n:11Heart.1.Desc}}/{{i18n:11Heart.1.Hint}}/Royal_Serpent 20 Wizard/{{ModId}}_11Heart.2/10000//false/{{i18n:11Heart.1.Ngao}}",
+    //note that i don't use the REWARD DESCRIPTION field because i don't care about it
+   }
+  },
+
+  //aw shit here we go again data/specialorders
+
+  {
+   "LogName": "Aw shit hold on lemme get out the dictionary this one's a bad boy",
+   "Action": "EditData",
+   "Target": "Data/SpecialOrders", //https://stardewvalleywiki.com/Modding:Special_orders
+   "Entries": {
+    "Willy": { //let's just pull apart dick's special order, ok?
+     "Name": "[Willy_Name]", //this refers to a string in Strings/SpecialOrderStrings, which means if you're using a custom npc, you have to edit your entry into there
+     "Requester": "Willy", //this is the npc that's requesting it, note that it is the INTERNAL NPC'S NAME, so NOT THE DISPLAYNAME, so if you made your npc {{ModId}}_NAME, then you need to put it as {{ModId}}_NAME
+     "Duration": "Week", //how long do you want before this auto-fails, OneDay/ThreeDays/Week/TwoWeeks/Month
+     "Repeatable": "False", //will this be repeatable
+     "RequiredTags": "", //not exactly game state queries but these are conditions for this special order to spawn
+     "OrderType": "", //blank for town board, Qi for qi, DesertFestivalMarlon for marlon
+     "SpecialRule": "", //https://stardewvalleywiki.com/Modding:Special_orders#Special_rules
+     "Text": "[Willy_Text]", //this is ALSO in Strings/SpecialOrderStrings
+     "ItemToRemoveOnEnd": null, //yeet an item from the player's inventory
+     "MailToRemoveOnEnd": null, //yeet a mail from the player's inventory
+     "RandomizedElements": null, //https://stardewvalleywiki.com/Modding:Special_orders#Randomized_Elements
+     "Objectives": [ //https://stardewvalleywiki.com/Modding:Special_orders#Objectives
+      {
+       "Type": "Collect", //i'm getting tired of describing these 
+       "Text": "[Willy_Objective_0_Text]", //this is also in Strings/SpecialOrderStrings
+       "RequiredCount": "100",
+       "Data": {
+        "AcceptedContextTags": "item_bug_meat"
+       }
+      },
+      {
+       "Type": "Donate",
+       "Text": "[Willy_Objective_1_Text]",
+       "RequiredCount": "100",
+       "Data": {
+        "DropBox": "WillyBarrel",
+        "DropBoxGameLocation": "Beach",
+        "DropBoxIndicatorLocation": "37 32",
+        "AcceptedContextTags": "item_bug_meat"
+       }
+      }
+     ],
+     "Rewards": [
+      {
+       "Type": "Money",
+       "Data": {
+        "Amount": "3000"
+       }
+      },
+      {
+       "Type": "Mail",
+       "Data": {
+        "MailReceived": "willyBugWadCutscene" //this sends a MAILFLAG to the player
+       }
+      }//man
+     ]//there sure are
+    }//a lot of closing
+   }//brackets
+  },//up in here
+
+  //you're playing with the big bois now *snaps fingers* *spawns a snake* data/events/vanilla event
+
   {
    "LogName": "A crime to events",
    "Action": "EditData",
    "Target": "Data/Events/AbandonedJojaMart", //MA, THEY'RE MAKING A CRIME ON A VANILLA EVENT!!!
    "TextOperations": [ //textoperations is a <List> https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/text-operations.md
     {
-     "Operation": "ReplaceDelimited",
-     "Target": [ "Entries", "missingBundleComplete" ],
-     "Search": "communityCenter",
-     "Value": "Plums",
-     "Delimiter": "/"
+     "Operation": "ReplaceDelimited", //replacedelimited will 'search' for your key term to 'replace' it
+     "Target": [ "Entries", "missingBundleComplete" ], //here, i'm digging into the <key> of <missingBundleComplete> and because this is purely a string, delimited by /, then you need to search for the proper term
+     "Search": "communityCenter", //here i'm grabbing the communityCenter music
+     "Value": "Plums", //and replacing it with the plums music
+     "Delimiter": "/" //with the delimiter telling it to stop
     }
    ]
   }

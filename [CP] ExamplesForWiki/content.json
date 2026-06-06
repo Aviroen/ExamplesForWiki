@@ -10,6 +10,20 @@
  let's go into the Format:
  */
  "Format": "2.9.0", //this is the current CONTENT PATCHER version as of June 3rd, 2026
+ "ConfigSchema": {
+  "TalkingHeads": {
+   "AllowValues": "BigHeaded, SmallHeaded",
+   "Default": "BigHeaded",
+   "Section": "Appearance",
+   "Description": "Talking Heads is currently in Super Alpha(TM) and I haven't done much except the first portrait. Default off."
+  },
+  "TalkingHeads2": {
+   "AllowValues": "true, false",
+   "Default": false,
+   "Section": "Appearance",
+   "Description": "Talking Heads is currently in Super Alpha(TM) and I haven't done much except the first portrait. Default off."
+  }
+ },
  "Changes": [
   /*
   "CHANGES" is a <List> dictated by the [] (square brackets)
@@ -33,6 +47,11 @@
    "LogName": "INCLUDE LOAD PATCH",
    "Action": "Include",
    "FromFile": "EditDataPatches.json"
+  },
+  {
+   "LogName": "Actual Crimelord Avi 'Godfather' Roen",
+   "Action": "Include",
+   "FromFile": "HighTierPlaysOnly.json"
   }
  ]
 }
