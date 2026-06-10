@@ -1,0 +1,69 @@
+{
+ "Changes": [
+  /*
+  let's edit some vanilla maps, say you want to put something from a specific tilesheet into a specific spot
+*/
+  {
+   "Action": "EditMap",
+   "Target": "Maps/Forest", //good luck finding a good spot for anything in here but we're just gonna ignore any other mods for right now
+   "MapTiles": [ //map tiles means you're selecting specific tiles on the map, like the x/y coords when you open up Tiled
+    {
+     "Position": { //this is to tell content patcher that you want specifically this x/y coord
+      "X": 11,
+      "Y": 35
+     },
+     "Layer": "Buildings", //here i target the buildings layer, which means i want it to be impassable, something for an npc to warp into like a door
+     "SetTilesheet": "outdoors", //the sprite that i want to pull is that green crystal
+     "SetIndex": "1867", //this is where the BOTTOM of the green crystal is, index-wise
+     "SetProperties": {
+      "Action": "LockedDoorWarp 9 18 {{Room}} 600 1800 {{Ngao}} 500"
+     } //this is the map action that i want to occur when the player attempts to touch it
+     //NOTICE: TouchAction is meant SPECIFICALLY for the BACK layer, ACTION is meant for the BUILDINGS layer
+    },
+    {
+     "Position": {
+      "X": 11,
+      "Y": 34 //now i move up one tile so i can place the rest of the crystal
+     },
+     "Layer": "Front", //i put it on the front layer because i want it to be ABOVE the building layer, and also because i don't want it to erase the cliff face here
+     "SetTilesheet": "outdoors",
+     "SetIndex": "1842" //this is where the index of the TOP PART OF THE GREEN CRYSTAL is
+    },
+    {
+     "Position": {
+      "X": 19, //this is where i'm putting a FRAMEWORK action here
+      "Y": 34
+     },
+     "Layer": "Back", //i'm putting it on the back because MMAP framework specifically states as such, you can fiddle around with this if you need something specific to do
+     "SetProperties": {
+      "mushymato.MMAP_TAS": "{{ModId}}_PauPortal {{ModId}}_Portal" //some frameworks have different ways of calling their actions, sometimes they require it to be a TOUCHACTION/ACTION or they've called their own method here like "mushymato.MMAP_TAS"
+     }
+    }
+   ]
+  },
+  /*
+  let's be a little more criminal by doing some replacement patches
+*/
+  {
+   "Action": "EditMap",
+   "Target": "Maps/Mines/77377" //this is specifically the map where you go and get the golden scythe, i'm taking my example from voidsent that i'm creating a little cave hole here
+   "PatchMode": "Replace", //let's assume that you've made the .tmx with the appropriate back + buildings + front + alwaysfront layers if necessary
+   "FromFile": "Assets/AllPatches.tmx", //for now, i'm copying straight from voidsent,
+   "FromArea": { //the FROM is YOUR FILE that you want to grab from
+    "X": 0, //my edit starts at 0,0 and it's 3 tiles wide, 4 tiles high
+    "Y": 0,
+    "Width": 3,
+    "Height": 4
+   },
+   "ToArea": { //the TO AREA is where you want to override the vanilla map
+    "X": 31, //i put my cave right next to where the golden scythe statue is
+    "Y": 2,
+    "Width": 3, //the same dimensions as the tmx i'm using to edit
+    "Height": 4
+   },
+   "AddWarps": [
+    "32 3 Aviroen.VoidsentCP_ArtificialBeach 12 2"//this adds a flat MapProperty warp to where i made my edit, so that you can reach the map
+   ]
+  }
+ ]
+}

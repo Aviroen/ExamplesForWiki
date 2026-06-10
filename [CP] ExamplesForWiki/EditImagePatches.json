@@ -1,0 +1,28 @@
+{
+ "Changes": [
+  /*
+  alright you gremlins we're onto the editimage section of hell
+  this is where things get into the "Stepping on other people's toes" boundaries especially if you're doing this to an npc's portraits, disregarding the "APPEARANCE" field
+  this is NOT meant to do that, this is more akin to finding that greebly in the stupid LooseSprites/Cursors that we all hate
+  */
+  {
+   "Action": "EditImage",
+   "Target": "LooseSprites/Cursors",
+   "FromFile": "Assets/Wizard.png",//let's just use the wizard portrait i have in here to replace the big star in cursors
+   "FromArea": {
+    "X": 0,
+    "Y": 0,
+    "Width": 64, //these are the dimensions for the wizard portrait
+    "Height": 64
+   },
+   "ToArea": {
+    "X": 192, //the top left part of the star
+    "Y": 128, //you can find these x/y indicies by opening LooseSprites/Cursors into any map that you've made, or a blank, and clicking on wherever
+    //it'll tell you the image rect being [(x,y), width x height]
+    "Width": 64,
+    "Height": 64
+   },
+   "PatchMode": "Replace"//we're gonna replace the whole star with the wizard's funky face
+  }
+ ]
+}

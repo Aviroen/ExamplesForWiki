@@ -37,6 +37,14 @@
   etc
   in this format, I will be writing everything in their own separate JSON files
   so I will be using all "INCLUDES" in the CONTENT.JSON
+
+  you **CAN** load all of these things in one go, but i've separated them out so that smapi can yell at you if you just copy paste this in
+  what it looks like:
+  {
+   "LogName": "INCLUDE ALL PATCHES",
+   "Action": "Include",
+   "FromFile": "LoadPatches.json, EditDataPatches.json, EditImagePatches.json, EditMapPatches.json, HighTierPlaysOnly.json"
+  },
   */
   {
    "LogName": "INCLUDE LOAD PATCH",
@@ -44,7 +52,7 @@
    "FromFile": "LoadPatches.json"
   },
   {
-   "LogName": "INCLUDE LOAD PATCH",
+   "LogName": "INCLUDE EDITDATA PATCH",
    "Action": "Include",
    "FromFile": "EditDataPatches.json"
   },
@@ -52,6 +60,16 @@
    "LogName": "Actual Crimelord Avi 'Godfather' Roen",
    "Action": "Include",
    "FromFile": "HighTierPlaysOnly.json"
+  },
+  {
+   "LogName": "INCLUDE EDITMAP PATCH",
+   "Action": "Include",
+   "FromFile": "EditMapPatches.json"
+  },
+  {
+   "LogName": "INCLUDE EDITIMAGE PATCH",
+   "Action": "Include",
+   "FromFile": "EditImagePatches.json"
   }
  ]
 }
