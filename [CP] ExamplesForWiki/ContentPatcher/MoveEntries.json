@@ -44,6 +44,9 @@
     }
    ]
   },
+  /*
+  https://stardewmodding.wiki.gg/wiki/Tutorial:_Adding_New_Machines_(Or_New_Rules_To_Existing_Machines)#Use_MoveEntries_to_reorder_entries_in_a_list
+  */
   {
    "Action": "EditData",
    "Target": "Data/Machines",
