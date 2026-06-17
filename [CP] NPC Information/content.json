@@ -10,6 +10,12 @@
  let's go into the Format:
  */
  "Format": "2.9.0", //this is the current CONTENT PATCHER version as of June 3rd, 2026
+ /*
+ https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/config.md
+ ConfigSchema is where you put things that can be seen either in a config.json that gets created upon a save load OR GMCM has its own menu for it
+ They're all { Objects } with "Fields": ""
+
+ */
  "ConfigSchema": {
   "TalkingHeads": {
    "AllowValues": "BigHeaded, SmallHeaded",
@@ -102,26 +108,6 @@
    "LogName": "INCLUDE LOAD PATCH",
    "Action": "Include",
    "FromFile": "ContentPatcher/LoadPatches.json"
-  },
-  {
-   "LogName": "INCLUDE EDITDATA PATCH",
-   "Action": "Include",
-   "FromFile": "ContentPatcher/EditDataPatches.json"
-  },
-  {
-   "LogName": "Actual Crimelord Avi 'Godfather' Roen",
-   "Action": "Include",
-   "FromFile": "ContentPatcher/HighTierPlaysOnly.json"
-  },
-  {
-   "LogName": "INCLUDE EDITMAP PATCH",
-   "Action": "Include",
-   "FromFile": "ContentPatcher/EditMapPatches.json"
-  },
-  {
-   "LogName": "INCLUDE EDITIMAGE PATCH",
-   "Action": "Include",
-   "FromFile": "ContentPatcher/EditImagePatches.json"
   }
  ]
 }

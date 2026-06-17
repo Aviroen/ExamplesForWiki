@@ -1,0 +1,59 @@
+{
+ "Changes": [
+  /*
+  https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/action-editdata.md#moving-list-entries
+  This is the one straight from Content Patcher
+  whether or not the game actually cares about the list order depends on whether or not it has an order of operations
+  Visually, you'll see that it affects things like Shops, Machine Data, and Fish Ponds
+
+  HOWEVER, if a list has a "Field": "" such as "Precedence": ## then moving a list around will not affect it
+  */
+  {
+   "Action": "EditData",
+   "Target": "Data/MoviesReactions",
+   "MoveEntries": [
+    {
+     "ID": "Abigail",
+     "BeforeId": "Leah"
+    }, // move entry so it's right before Leah
+    {
+     "ID": "Abigail",
+     "AfterId": "Leah"
+    }, // move entry so it's right after Leah
+    {
+     "ID": "Abigail",
+     "ToPosition": "Top"
+    }, // move entry to the top of the list
+    {
+     "ID": "Abigail",
+     "ToPosition": "Bottom"
+    } // move entry to the bottom of the list
+   ]
+  },
+  /*
+  avi test this later idk if this will work because idr how far to dig for targetfield
+  */
+  {
+   "Action": "EditData",
+   "Target": "Data/Shops",
+   "TargetField": [ "DesertFestival_Sam", "Items" ], //targeting Sam's Desert Festival Shop
+   "MoveEntries": [
+    {
+     "ID": "(W)30", //moving sam's guitar
+     "ToPosition": "Top" //to the top
+    }
+   ]
+  },
+  {
+   "Action": "EditData",
+   "Target": "Data/Machines",
+   "TargetField": [ "(BC)163" ], //targeting the cask
+   "MoveEntries": [
+    {
+     "ID": "Cheese", //moving the cheese
+     "ToPosition": "Bottom" //to the bottom
+    }
+   ]
+  }
+ ]
+}

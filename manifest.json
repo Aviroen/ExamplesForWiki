@@ -12,7 +12,7 @@
   "Author": "Aviroen",
   "Version": "1.0.0-Debug",
   "Description": "Mostly Content Patcher examples with a smidge of C# because I was too lazy to make a blank folder.",
-  "MinimumApiVersion": "4.5.2",
+  "MinimumApiVersion": "4.5",
   "MinimumGameVersion": "1.6.15",
   "EntryDll": "ExamplesForWiki.dll",
   "UpdateKeys": [

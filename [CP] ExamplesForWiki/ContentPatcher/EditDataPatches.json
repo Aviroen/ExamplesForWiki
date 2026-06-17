@@ -137,11 +137,11 @@
        "Data": {
         "MailReceived": "willyBugWadCutscene" //this sends a MAILFLAG to the player
        }
-      }//man
-     ]//there sure are
-    }//a lot of closing
-   }//brackets
-  },//up in here
+      } //man
+     ] //there sure are
+    } //a lot of closing
+   } //brackets
+  }, //up in here
 
   //you're playing with the big bois now *snaps fingers* *spawns a snake* data/events/vanilla event
 

@@ -1,0 +1,16 @@
+{
+ "$schema": "https://smapi.io/schemas/manifest.json",
+ "UniqueID": "Aviroen.ExamplesForWikiCPNPC",
+ "Name": "[CP] Examples For Wiki NPC Information",
+ "Author": "Aviroen",
+ "Version": "1.0.0",
+ "Description": "Mostly Content Patcher examples with a smidge of C# because I was too lazy to make a blank folder.",
+ "MinimumApiVersion": "4.5",
+ "MinimumGameVersion": "1.6.15",
+ "ContentPackFor": {
+  "UniqueID": "Pathoschild.ContentPatcher"
+ },
+ "UpdateKeys": [
+  "Nexus:46346"
+ ]
+}
