@@ -1,0 +1,38 @@
+{
+ "Changes": [
+  {
+   "Action": "EditData",
+   "Target": "Data/Objects",
+   "Entries": {
+    "{{ModId}}_{{ITEMNAME}}": {
+     "Name": "{{ModId}}_{{ITEMNAME}}",
+     "DisplayName": "{{i18n:{{ITEMNAME}}.Name}}",
+     "Description": "{{i18n:{{ITEMNAME}}.Description}}",
+     "Type": "Quest",
+     "Category": 0,
+     "Price": 100,
+     "Texture": "{{ModId}}/Objects",
+     "SpriteIndex": "{{SPRITEINDEX}}",
+     "ColorOverlayFromNextIndex": false,
+     "Edibility": -300,
+     "IsDrink": false,
+     "Buffs": null,
+     "GeodeDropsDefaultItems": false,
+     "GeodeDrops": null,
+     "ArtifactSpotChances": null,
+     "CanBeGivenAsGift": false,
+     "CanBeTrashed": false,
+     "ExcludeFromFishingCollection": true,
+     "ExcludeFromShippingCollection": true,
+     "ExcludeFromRandomSale": true,
+     "ContextTags": [
+      "{{CONTEXTTAG}}"
+     ],
+     "CustomFields": {
+      "Spiderbuttons.CMF/PedestalAction": "Spiderbuttons.BETAS_Message \"{{i18n:{{ITEMNAME}}.Pedestal}}\""
+     }
+    }
+   }
+  }
+ ]
+}

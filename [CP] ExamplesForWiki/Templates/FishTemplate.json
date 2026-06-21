@@ -1,0 +1,89 @@
+{
+ "Changes": [
+  {
+   "Action": "EditData",
+   "Target": "Data/AquariumFish",
+   "Entries": {
+    "{{ModId}}_{{FISH}}": "{{INDEX}}/{{TYPE}}/{{IDLEANIM}}////{{ModId}}\\Sharks"
+   }
+  },
+  {
+   "Action": "EditData",
+   "Target": "Data/Fish",
+   "Entries": {
+    "{{ModId}}_{{FISH}}": "{{i18n:{{FISH}}.Name}}/90/mixed/{{MINSIZE}}/{{MAXSIZE}}/{{MINTIME}} {{MAXTIME}}/{{SEASON}}/{{WEATHER}}//4/.3/.5/{{FISHINGLEVEL}}/false"
+   }
+  },
+  {
+   "Action": "EditData",
+   "Target": "Data/Objects",
+   "Entries": {
+    "{{ModId}}_{{FISH}}": {
+     "Name": "{{ModId}}_{{FISH}}",
+     "DisplayName": "{{i18n:{{FISH}}.Name}}",
+     "Description": "{{i18n:{{FISH}}.Description}}",
+     "Type": "Fish",
+     "Category": -4,
+     "Price": 250,
+     "Texture": "{{ModId}}\\Objects",
+     "SpriteIndex": "{{16INDEX}}", //starts at 54
+     "Edibility": "{{EDIBILITY}}",
+     "IsDrink": false,
+     "ExcludeFromFishingCollection": true,
+     "ExcludeFromShippingCollection": true,
+     "ExcludeFromRandomSale": true,
+     "ContextTags": [
+      "{{COLORTAG}}",
+      "{{WATERTAG}}",
+      "{{RARITYTAG}}",
+      "shark"
+     ]
+    }
+   }
+  },
+  {
+   "Action": "EditData",
+   "Target": "Data/FishPondData",
+   "Entries": {
+    "{{ModId}}_{{FISH}}": {
+     "ID": "{{ModId}}_{{FISH}}",
+     "RequiredTags": [
+      "item_{{Lowercase:{{FISH}}}}"
+     ],
+     "SpawnTime": -1,
+     "ProducedItems": [
+      {
+       "RequiredPopulation": 10,
+       "Chance": 0.10,
+       "ItemId": "{{ITEMDROP10}}",
+       "MinQuantity": 1,
+       "MaxQuantity": 2
+      },
+      {
+       "RequiredPopulation": 7,
+       "Chance": 0.33,
+       "ItemId": "{{ITEMDROP7}}",
+       "MinQuantity": 1,
+       "MaxQuantity": 2
+      },
+      {
+       "RequiredPopulation": 0,
+       "Chance": 1.0,
+       "ItemId": "{{ITEMDROP0}}",
+       "MinQuantity": 1,
+       "MaxQuantity": 1
+      }
+     ],
+     "PopulationGates": {
+      "5": [
+       "{{REQITEMLV5}} 5"
+      ],
+      "9": [
+       "{{REQITEMLV9}} 1"
+      ]
+     }
+    }
+   }
+  }
+ ]
+}

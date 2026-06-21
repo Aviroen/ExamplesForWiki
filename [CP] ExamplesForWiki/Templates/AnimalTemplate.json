@@ -1,0 +1,113 @@
+{
+ "Changes": [
+  {
+   "Action": "Load",
+   "Target": "{{ModId}}/Animals/{{ANIMAL}}",
+   "FromFile": "Assets/Animals/{{ANIMAL}}.png"
+  },
+  {
+   "Action": "EditData",
+   "Target": "Data/FarmAnimals",
+   "Entries": {
+    "{{ModId}}_{{ANIMAL}}": {
+     "DisplayName": "{{i18n:{{ANIMAL}}.Name}}",
+     "House": "{{HOUSE}}",
+     "Gender": "MaleOrFemale",
+     "PurchasePrice": "{{PRICE}}",
+     "SellPrice": "{{SELLPRICE}}",
+     "ShopTexture": "{{ModId}}\\AnimalShop",
+     "ShopSourceRect": {
+      "X": "{{XSOURCERECT}}",
+      "Y": "{{YSOURCERECT}}",
+      "Width": 32,
+      "Height": 16
+     },
+     "ShopDisplayName": "{{i18n:{{ANIMAL}}.Name}}",
+     "ShopDescription": "{{i18n:{{ANIMAL}}.ShopDescription}}",
+     "ShopMissingBuildingDescription": "{{i18n:{{ANIMAL}}.MissingBuilding}}",
+     "RequiredBuilding": "{{REQBUILDING}}",
+     "UnlockCondition": "{{UNLOCKCONDITION}}",
+     "AlternatePurchaseTypes": null,
+     "EggItemIds": null,
+     "IncubationTime": -1,
+     "IncubatorParentSheetOffset": 1,
+     "BirthText": null,
+     "DaysToMature": "{{DAYSTOMATURE}}",
+     "CanGetPregnant": false,
+     "DaysToProduce": "{{DAYSTOPRODUCE}}",
+     "HarvestType": "DropOvernight",
+     "HarvestTool": null,
+     "ProduceItemIds": [
+      {
+       "Id": "Default",
+       "Condition": null,
+       "MinimumFriendship": 0,
+       "ItemId": "{{PRODUCEITEMID}}"
+      }
+     ],
+     "DeluxeProduceItemIds": [
+      {
+       "Id": "Default",
+       "Condition": null,
+       "MinimumFriendship": 0,
+       "ItemId": "{{DELUXEITEMID}}"
+      }
+     ],
+     "ProduceOnMature": false,
+     "FriendshipForFasterProduce": -1,
+     "DeluxeProduceMinimumFriendship": 0,
+     "DeluxeProduceCareDivisor": 5000.0,
+     "DeluxeProduceLuckMultiplier": 1.02,
+     "CanEatGoldenCrackers": true,
+     "ProfessionForHappinessBoost": 2,
+     "ProfessionForQualityBoost": 2,
+     "ProfessionForFasterProduce": -1,
+     "Sound": "wateringCan",
+     "BabySound": null,
+     "Texture": "{{ModId}}\\Animals\\{{ANIMAL}}",
+     "HarvestedTexture": null,
+     "BabyTexture": null,
+     "UseFlippedRightForLeft": "{{USEFLIPPEDLR}}",
+     "SpriteWidth": "{{SPRITEWIDTH}}",
+     "SpriteHeight": "{{SPRITEHEIGHT}}",
+     "UseDoubleUniqueAnimationFrames": false,
+     "SleepFrame": "{{SLEEPFRAME}}",
+     "EmoteOffset": {
+      "X": 0,
+      "Y": 0
+     },
+     "SwimOffset": {
+      "X": 0,
+      "Y": 112
+     },
+     "Skins": null,
+     "ShadowWhenBabySwims": null,
+     "ShadowWhenBaby": null,
+     "ShadowWhenAdultSwims": null,
+     "ShadowWhenAdult": null,
+     "Shadow": {
+      "Visible": false,
+      "Offset": null,
+      "Scale": null
+     },
+     "CanSwim": false,
+     "BabiesFollowAdults": false,
+     "GrassEatAmount": 4,
+     "HappinessDrain": 4,
+     "UpDownPetHitboxTileSize": "1.5, 1.75",
+     "LeftRightPetHitboxTileSize": "1.75, 1.25",
+     "BabyUpDownPetHitboxTileSize": "1, 1",
+     "BabyLeftRightPetHitboxTileSize": "1, 1",
+     "StatToIncrementOnProduce": null,
+     "ShowInSummitCredits": true,
+     "CustomFields": {
+      "mushymato.LivestockBazaar/BuyFrom.{{ModId}}_Lou": true,
+      "mushymato.LivestockBazaar/BuyFrom.Marnie": false,
+      "mushymato.LivestockBazaar/TradeItemId.{{ModId}}_Lou": "{{TRADEITEMID}}",
+      "mushymato.LivestockBazaar/TradeItemAmount": "{{TRADEITEMCOUNT}}"
+     }
+    }
+   }
+  }
+ ]
+}

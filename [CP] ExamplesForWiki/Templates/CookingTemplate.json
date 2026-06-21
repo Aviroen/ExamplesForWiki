@@ -1,0 +1,77 @@
+{
+ "Changes": [
+  {
+   "Action": "EditData",
+   "Target": "rokugin.perfectionexclusions/recipes",
+   "Entries": {
+    "{{ModId}}_{{COOKINGNAME}}Exclusion": {
+     "CraftingRecipes": [
+      "{{ModId}}_{{COOKINGNAME}}"
+     ]
+    }
+   }
+  },
+  {
+   "Action": "EditData",
+   "Target": "Data/CookingRecipes",
+   "Entries": {
+    "{{ModId}}_{{COOKINGNAME}}": "{{INGREDIENTS}}//{{YIELD}}//{{UNLOCKCONDITIONS}}/{{i18n:{{COOKINGNAME}}.Name}}"
+   }
+  },
+  {
+   "Action": "EditData",
+   "Target": "Data/Objects",
+   "Entries": {
+    "{{ModId}}_{{COOKINGNAME}}": {
+     "Name": "{{ModId}}_{{COOKINGNAME}}",
+     "DisplayName": "{{i18n:{{COOKINGNAME}}.Name}}",
+     "Description": "{{i18n:{{COOKINGNAME}}.Description}}",
+     "Type": "Cooking",
+     "Category": -7,
+     "Price": "{{PRICE}}",
+     "Texture": "{{ModId}}/Objects",
+     "SpriteIndex": "{{SPRITEINDEX}}",
+     "Edibility": "{{EDIBILITY}}",
+     "IsDrink": "{{DRINKABLE}}",
+     "Buffs": [
+      {
+       "Id": "Food",
+       "BuffId": "{{BUFFID}}",
+       "IconTexture": null,
+       "IconSpriteIndex": 0,
+       "Duration": "{{DURATION}}",
+       "IsDebuff": "{{DEBUFF}}",
+       "GlowColor": "{{GLOWCOLOR}}",
+       "CustomAttributes": {
+        "FarmingLevel": "{{FARMINGLEVEL}}",
+        "FishingLevel": "{{FISHINGLEVEL}}",
+        "MiningLevel": "{{MININGLEVEL}}",
+        "LuckLevel": "{{LUCKLEVEL}}",
+        "ForagingLevel": "{{FORAGINGLEVEL}}",
+        "MaxStamina": "{{MAXSTAMINA}}",
+        "MagneticRadius": "{{MAGNETICRADIUS}}",
+        "Speed": "{{SPEED}}",
+        "Defense": "{{DEFENSE}}",
+        "Attack": "{{ATTACK}}"
+       },
+       "CustomFields": null
+      }
+     ],
+     "GeodeDropsDefaultItems": false,
+     "ColorOverlayFromNextIndex": false,
+     "GeodeDrops": null,
+     "ArtifactSpotChances": null,
+     "CanBeGivenAsGift": "{{GIFTABLE}}",
+     "CanBeTrashed": "{{TRASHABLE}}",
+     "ExcludeFromFishingCollection": true,
+     "ExcludeFromShippingCollection": true,
+     "ExcludeFromRandomSale": true,
+     "ContextTags": [
+      "{{COLORTAG}}"
+     ],
+     "CustomFields": null
+    }
+   }
+  }
+ ]
+}

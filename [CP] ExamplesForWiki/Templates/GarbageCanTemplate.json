@@ -1,0 +1,61 @@
+{
+ "Changes": [
+  {
+   "LogName": "Put the hard hat on it's garbage time",
+   "Action": "EditData",
+   "Target": "Data/GarbageCans",
+   "TargetField": [ "GarbageCans" ],
+   "Entries": {
+    "{{ModId}}_Morabyr{{NUMBER}}": {
+     "BaseChance": 1.0,
+     "Items": [
+      {
+       "IgnoreBaseChance": false,
+       "IsMegaSuccess": false,
+       "IsDoubleMegaSuccess": false,
+       "AddToInventoryDirectly": false,
+       "CreateMultipleDebris": false,
+       "Condition": "{{CONDITION}}",
+       "Id": "{{IDNAME}}",
+       "ItemId": null,
+       "RandomItemId": [
+        "{{RANDOM1stack}}",
+        "{{RANDOM2stack}}",
+        "{{RANDOM3stack}}"
+       ],
+       "MaxItems": null,
+       "MinStack": -1,
+       "MaxStack": -1,
+       "Quality": -1,
+       "ObjectInternalName": null,
+       "ObjectDisplayName": null,
+       "ObjectColor": null,
+       "ToolUpgradeLevel": -1,
+       "IsRecipe": false,
+       "StackModifiers": [
+        {
+         "Id": "DefaultMultiplier",
+         "Condition": null,
+         "Modification": "Multiply",
+         "Amount": 0.0,
+         "RandomAmount": [
+          1.0,
+          2.0,
+          3.0,
+          4.0
+         ]
+        }
+       ],
+       "StackModifierMode": "Stack",
+       "QualityModifiers": null,
+       "QualityModifierMode": "Stack",
+       "ModData": null,
+       "PerItemCondition": null
+      }
+     ],
+     "CustomFields": null
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "Changes": [
+  {
+   "Action": "EditData",
+   "Target": "Data/Hats",
+   "Entries": {
+    "{{ModId}}_{{HATNAME}}": "{{ModId}}_{{HATNAME}}/{{i18n:{{HATNAME}}.Description}}/{{SHOWREALHAIR}}/{{SKIPHAIROFFSET}}/{{TAGS}}/{{i18n:{{HATNAME}}.Name}}/{{SPRITEINDEX}}/{{ModId}}\\Hats"
+   }
+  }
+ ]
+}

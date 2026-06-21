@@ -1,0 +1,24 @@
+{
+ "Changes": [
+  {
+   "Action": "EditData",
+   "Target": "Data/Shirts",
+   "Entries": {
+    "{{ModId}}_{{SHIRTID}}": {
+     "Name": "{{SHIRTID}}",
+     "DisplayName": "{{i18n:{{SHIRTID}}.Name}}",
+     "Description": "{{i18n:{{SHIRTID}}.Description}}",
+     "Price": 50,
+     "Texture": "{{ModId}}/Shirts",
+     "SpriteIndex": "{{INDEX}}",
+     "DefaultColor": null,
+     "CanBeDyed": "{{DYEABLE}}",
+     "IsPrismatic": "{{PRISMATIC}}",
+     "HasSleeves": "{{SLEEVES}}",
+     "CanChooseDuringCharacterCustomization": false,
+     "CustomFields": null
+    }
+   }
+  }
+ ]
+}

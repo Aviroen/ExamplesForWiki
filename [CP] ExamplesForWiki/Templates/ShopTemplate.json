@@ -1,0 +1,49 @@
+{
+ "Changes": [
+  {
+   "Action": "EditData",
+   "Target": "Data/Shops",
+   "Entries": {
+    "{{ModId}}_{{SHOPNAME}}": {
+     "Currency": 0,
+     "StackSizeVisibility": null,
+     "OpenSound": "openChest",
+     "PurchaseSound": "purchaseClick",
+     "PurchaseRepeatSound": "purchaseRepeat",
+     "PriceModifiers": null,
+     "PriceModifierMode": "Stack",
+     "Owners": [
+      {
+       "Name": "{{NAMEENTRY}}",
+       "Portrait": "{{PORTRAIT}}",
+       "Dialogues": [
+        {
+         "Id": "{{ModId}}_{{SHOPNAME}}",
+         "Condition": null,
+         "RandomDialogue": [
+          "{{i18n:{{SHOPNAME}}.0}}",
+          "{{i18n:{{SHOPNAME}}.1}}",
+          "{{i18n:{{SHOPNAME}}.2}}",
+          "{{i18n:{{SHOPNAME}}.3}}",
+          "{{i18n:{{SHOPNAME}}.4}}",
+          "{{i18n:{{SHOPNAME}}.5}}",
+          "{{i18n:{{SHOPNAME}}.6}}",
+          "{{i18n:{{SHOPNAME}}.7}}",
+          "{{i18n:{{SHOPNAME}}.8}}",
+          "{{i18n:{{SHOPNAME}}.9}}"
+         ]
+        }
+       ],
+       "RandomizeDialogueOnOpen": true
+      }
+     ],
+     "VisualTheme": null,
+     "SalableItemTags": [],
+     "Items": [],
+     "CustomFields": null,
+     "ApplyProfitMargins": null
+    }
+   }
+  }
+ ]
+}

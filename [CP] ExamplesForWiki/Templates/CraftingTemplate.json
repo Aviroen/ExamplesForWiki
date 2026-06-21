@@ -1,0 +1,55 @@
+{
+ "Changes": [
+  {
+   "Action": "EditData",
+   "Target": "rokugin.perfectionexclusions/recipes",
+   "Entries": {
+    "{{ModId}}_{{CRAFTINGNAME}}Exclusion": {
+     "CraftingRecipes": [
+      "{{ModId}}_{{CRAFTINGNAME}}"
+     ]
+    }
+   }
+  },
+  {
+   "Action": "EditData",
+   "Target": "Data/CraftingRecipes",
+   "Entries": {
+    "{{ModId}}_{{CRAFTINGNAME}}": "{{INGREDIENTS}}//{{YIELD}}/{{BIGCRAFTABLE}}/{{UNLOCKCONDITIONS}}/{{i18n:{{CRAFTINGNAME}}.Name}}"
+   }
+  },
+  {
+   "Action": "EditData",
+   "Target": "Data/Objects",
+   "Entries": {
+    "{{ModId}}_{{CRAFTINGNAME}}": {
+     "Name": "{{ModId}}_{{CRAFTINGNAME}}",
+     "DisplayName": "{{i18n:{{CRAFTINGNAME}}.Name}}",
+     "Description": "{{i18n:{{CRAFTINGNAME}}.Description}}",
+     "Type": "{{TYPE}}",
+     "Category": "{{CATEGORY}}",
+     "Price": "{{PRICE}}",
+     "Texture": "{{ModId}}/Objects",
+     "SpriteIndex": "{{SPRITEINDEX}}",
+     "Edibility": "{{EDIBILITY}}",
+     "IsDrink": false,
+     "Buffs": null,
+     "GeodeDropsDefaultItems": false,
+     "GeodeDrops": null,
+     "ArtifactSpotChances": null,
+     "CanBeGivenAsGift": "{{GIFTABLE}}",
+     "CanBeTrashed": "{{TRASHABLE}}",
+     "ExcludeFromFishingCollection": true,
+     "ExcludeFromShippingCollection": true,
+     "ExcludeFromRandomSale": true,
+     "ContextTags": [
+      "{{COLORTAG}}",
+      "{{OPTTAG1}}",
+      "{{OPTTAG2}}"
+     ],
+     "CustomFields": null
+    }
+   }
+  }
+ ]
+}
