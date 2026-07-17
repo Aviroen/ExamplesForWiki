@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="70" height="70" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="1">
  <tileset firstgid="1" name="spring_Shadows" tilewidth="16" tileheight="16" tilecount="475" columns="19">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/spring_Shadows" width="304" height="400"/>
+  <image source="spring_Shadows" width="304" height="400"/>
  </tileset>
  <tileset firstgid="476" name="spring_beach" tilewidth="16" tileheight="16" tilecount="527" columns="17">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/spring_beach" width="272" height="496"/>
+  <image source="spring_beach" width="272" height="496"/>
   <tile id="7">
    <properties>
     <property name="Water" value="T"/>
@@ -1023,7 +1023,7 @@
   </tile>
  </tileset>
  <tileset firstgid="1003" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/paths" width="64" height="256"/>
+  <image source="paths" width="64" height="256"/>
   <tile id="0">
    <properties>
     <property name="PathType" value="NE"/>
@@ -1056,7 +1056,7 @@
   </tile>
  </tileset>
  <tileset firstgid="1067" name="spring_outdoorsTileSheet2" tilewidth="16" tileheight="16" tilecount="1120" columns="16">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/spring_outdoorsTileSheet2" width="256" height="1120"/>
+  <image source="spring_outdoorsTileSheet2" width="256" height="1120"/>
   <tile id="736">
    <properties>
     <property name="Type" value="Wood"/>
@@ -1089,7 +1089,7 @@
   </tile>
  </tileset>
  <tileset firstgid="2187" name="spring_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/spring_outdoorsTileSheet" width="400" height="1264"/>
+  <image source="spring_outdoorsTileSheet" width="400" height="1264"/>
   <tile id="150">
    <properties>
     <property name="Spawnable" value="T"/>
@@ -2402,7 +2402,7 @@
   </tile>
  </tileset>
  <tileset firstgid="4162" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/townInterior" width="512" height="1088"/>
+  <image source="townInterior" width="512" height="1088"/>
   <tile id="1323">
    <animation>
     <frame tileid="1323" duration="250"/>
@@ -2465,10 +2465,10 @@
   </tile>
  </tileset>
  <tileset firstgid="6338" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/townInterior_2" width="512" height="656"/>
+  <image source="townInterior_2" width="512" height="656"/>
  </tileset>
  <tileset firstgid="7650" name="volcano_dungeon" tilewidth="16" tileheight="16" tilecount="576" columns="16">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/Mines/volcano_dungeon" width="256" height="576"/>
+  <image source="Mines/volcano_dungeon" width="256" height="576"/>
   <tile id="25">
    <properties>
     <property name="Diggable" value="T"/>
@@ -2507,7 +2507,7 @@
   </tile>
  </tileset>
  <tileset firstgid="8226" name="island_tilesheet_1" tilewidth="16" tileheight="16" tilecount="2080" columns="32">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/island_tilesheet_1" width="512" height="1040"/>
+  <image source="island_tilesheet_1" width="512" height="1040"/>
   <tile id="376">
    <animation>
     <frame tileid="376" duration="110"/>
@@ -2540,7 +2540,7 @@
   </tile>
  </tileset>
  <tileset firstgid="10306" name="volcano_caldera" tilewidth="16" tileheight="16" tilecount="180" columns="9">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/Mines/volcano_caldera" width="144" height="320"/>
+  <image source="Mines/volcano_caldera" width="144" height="320"/>
   <tile id="108">
    <animation>
     <frame tileid="108" duration="100"/>
@@ -2583,7 +2583,7 @@
   </tile>
  </tileset>
  <tileset firstgid="10486" name="DesertTiles" tilewidth="16" tileheight="16" tilecount="368" columns="16">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/DesertTiles" width="256" height="368"/>
+  <image source="DesertTiles" width="256" height="368"/>
   <tile id="178">
    <animation>
     <frame tileid="178" duration="250"/>
@@ -2667,7 +2667,7 @@
   </tile>
  </tileset>
  <tileset firstgid="10854" name="night_market_tilesheet_objects" tilewidth="16" tileheight="16" tilecount="1368" columns="72">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/night_market_tilesheet_objects" width="1152" height="312"/>
+  <image source="night_market_tilesheet_objects" width="1152" height="312"/>
   <tile id="260">
    <animation>
     <frame tileid="260" duration="1000"/>
@@ -3136,13 +3136,13 @@
   </tile>
  </tileset>
  <tileset firstgid="12222" name="desert-extended" tilewidth="16" tileheight="16" tilecount="33" columns="3">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/DesertTiles_Extended" width="48" height="176"/>
+  <image source="DesertTiles_Extended" width="48" height="176"/>
  </tileset>
  <tileset firstgid="12255" name="JojaRuins_TileSheet" tilewidth="16" tileheight="16" tilecount="256" columns="16">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/JojaRuins_TileSheet" width="256" height="256"/>
+  <image source="JojaRuins_TileSheet" width="256" height="256"/>
  </tileset>
  <tileset firstgid="12511" name="coopTiles" tilewidth="16" tileheight="16" tilecount="84" columns="4">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/coopTiles" width="64" height="336"/>
+  <image source="coopTiles" width="64" height="336"/>
   <tile id="12">
    <properties>
     <property name="Type" value="Wood"/>
@@ -3166,10 +3166,10 @@
   </tile>
  </tileset>
  <tileset firstgid="12595" name="bathhouse_tiles" tilewidth="16" tileheight="16" tilecount="240" columns="15">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/bathhouse_tiles" width="240" height="256"/>
+  <image source="bathhouse_tiles" width="240" height="256"/>
  </tileset>
  <tileset firstgid="12835" name="boatTunnelTiles" tilewidth="16" tileheight="16" tilecount="130" columns="10">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/boatTunnelTiles" width="160" height="208"/>
+  <image source="boatTunnelTiles" width="160" height="208"/>
   <tile id="31">
    <animation>
     <frame tileid="31" duration="1000"/>
@@ -3220,7 +3220,7 @@
   </tile>
  </tileset>
  <tileset firstgid="12965" name="bugLandTiles" tilewidth="16" tileheight="16" tilecount="112" columns="8">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/bugLandTiles" width="128" height="224"/>
+  <image source="bugLandTiles" width="128" height="224"/>
   <tile id="4">
    <properties>
     <property name="Water" value="T"/>
@@ -3323,13 +3323,13 @@
   </tile>
  </tileset>
  <tileset firstgid="13077" name="spring_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/spring_town" width="512" height="1152"/>
+  <image source="spring_town" width="512" height="1152"/>
  </tileset>
  <tileset firstgid="15381" name="darkroom_tiles" tilewidth="16" tileheight="16" tilecount="56" columns="7">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/darkroom_tiles" width="112" height="128"/>
+  <image source="darkroom_tiles" width="112" height="128"/>
  </tileset>
  <tileset firstgid="15437" name="desert_festival_tilesheet" tilewidth="16" tileheight="16" tilecount="1088" columns="32">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/desert_festival_tilesheet" width="512" height="544"/>
+  <image source="desert_festival_tilesheet" width="512" height="544"/>
   <tile id="17">
    <properties>
     <property name="Type" value="Dirt"/>
@@ -4988,10 +4988,10 @@
   </tile>
  </tileset>
  <tileset firstgid="16525" name="ElliottHouseTiles" tilewidth="16" tileheight="16" tilecount="56" columns="4">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/ElliottHouseTiles" width="64" height="224"/>
+  <image source="ElliottHouseTiles" width="64" height="224"/>
  </tileset>
  <tileset firstgid="16581" name="ElliottSeaTiles" tilewidth="16" tileheight="16" tilecount="30" columns="6">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/ElliottSeaTiles" width="96" height="80"/>
+  <image source="ElliottSeaTiles" width="96" height="80"/>
   <tile id="24">
    <properties>
     <property name="Water" value="T"/>
@@ -4999,7 +4999,7 @@
   </tile>
  </tileset>
  <tileset firstgid="16611" name="EmilyDreamscapeTiles" tilewidth="16" tileheight="16" tilecount="96" columns="8">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/EmilyDreamscapeTiles" width="128" height="192"/>
+  <image source="EmilyDreamscapeTiles" width="128" height="192"/>
   <tile id="1">
    <animation>
     <frame tileid="1" duration="275"/>
@@ -5034,7 +5034,7 @@
   </tile>
  </tileset>
  <tileset firstgid="16707" name="spring_outdoorTileSheet_extra" tilewidth="16" tileheight="16" tilecount="64" columns="8">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/spring_outdoorTileSheet_extra" width="128" height="128"/>
+  <image source="spring_outdoorTileSheet_extra" width="128" height="128"/>
   <tile id="0">
    <properties>
     <property name="Buildable" type="bool" value="true"/>
@@ -5099,13 +5099,13 @@
   </tile>
  </tileset>
  <tileset firstgid="16771" name="mine" tilewidth="16" tileheight="16" tilecount="288" columns="16">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/Mines/mine" width="256" height="288"/>
+  <image source="Mines/mine" width="256" height="288"/>
  </tileset>
  <tileset firstgid="17059" name="HarveyBalloonTiles" tilewidth="16" tileheight="16" tilecount="736" columns="46">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/HarveyBalloonTiles" width="751" height="256"/>
+  <image source="HarveyBalloonTiles" width="751" height="256"/>
  </tileset>
  <tileset firstgid="17795" name="island_tilesheet_2" tilewidth="16" tileheight="16" tilecount="256" columns="32">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/island_tilesheet_2" width="512" height="128"/>
+  <image source="island_tilesheet_2" width="512" height="128"/>
   <tile id="166">
    <animation>
     <frame tileid="166" duration="130"/>
@@ -5190,13 +5190,13 @@
   </tile>
  </tileset>
  <tileset firstgid="18051" name="Island_FieldOffice_Tilesheet" tilewidth="16" tileheight="16" tilecount="120" columns="10">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/Island_FieldOffice_Tilesheet" width="160" height="192"/>
+  <image source="Island_FieldOffice_Tilesheet" width="160" height="192"/>
  </tileset>
  <tileset firstgid="18171" name="Island_Hut_tilesheet" tilewidth="16" tileheight="16" tilecount="288" columns="16">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/Island_Hut_tilesheet" width="256" height="288"/>
+  <image source="Island_Hut_tilesheet" width="256" height="288"/>
  </tileset>
  <tileset firstgid="18459" name="cave" tilewidth="16" tileheight="16" tilecount="72" columns="6">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/cave" width="96" height="192"/>
+  <image source="cave" width="96" height="192"/>
   <tile id="13">
    <properties>
     <property name="Spawnable" value="T"/>
@@ -5260,16 +5260,16 @@
   </tile>
  </tileset>
  <tileset firstgid="18531" name="LeoTreeHouse_Tilesheet" tilewidth="16" tileheight="16" tilecount="56" columns="7">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/LeoTreeHouse_Tilesheet" width="112" height="128"/>
+  <image source="LeoTreeHouse_Tilesheet" width="112" height="128"/>
  </tileset>
  <tileset firstgid="18587" name="masteryCaveTilesheet" tilewidth="16" tileheight="16" tilecount="240" columns="15">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/masteryCaveTilesheet" width="240" height="256"/>
+  <image source="masteryCaveTilesheet" width="240" height="256"/>
  </tileset>
  <tileset firstgid="18827" name="mermaid_tiles" tilewidth="16" tileheight="16" tilecount="117" columns="9">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/mermaid_house_tiles" width="144" height="208"/>
+  <image source="mermaid_house_tiles" width="144" height="208"/>
  </tileset>
  <tileset firstgid="18944" name="spring_Waterfalls" tilewidth="16" tileheight="16" tilecount="900" columns="36">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/spring_Waterfalls" width="576" height="400"/>
+  <image source="spring_Waterfalls" width="576" height="400"/>
   <tile id="1">
    <animation>
     <frame tileid="1" duration="100"/>
@@ -5416,7 +5416,7 @@
   </tile>
  </tileset>
  <tileset firstgid="19844" name="movieTheater_tileSheet" tilewidth="16" tileheight="16" tilecount="256" columns="16">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/MovieTheater_TileSheet" width="256" height="256"/>
+  <image source="MovieTheater_TileSheet" width="256" height="256"/>
   <tile id="16">
    <animation>
     <frame tileid="16" duration="800"/>
@@ -5526,13 +5526,13 @@
   </tile>
  </tileset>
  <tileset firstgid="20100" name="movieScreen_TileSheet" tilewidth="16" tileheight="16" tilecount="320" columns="20">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/MovieTheaterScreen_TileSheet" width="320" height="256"/>
+  <image source="MovieTheaterScreen_TileSheet" width="320" height="256"/>
  </tileset>
  <tileset firstgid="20420" name="nightSceneMaru" tilewidth="16" tileheight="16" tilecount="990" columns="30">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/nightSceneMaru" width="480" height="528"/>
+  <image source="nightSceneMaru" width="480" height="528"/>
  </tileset>
  <tileset firstgid="21410" name="qiNutRoom_tilesheet" tilewidth="16" tileheight="16" tilecount="154" columns="14">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/qiNutRoom_tilesheet" width="224" height="176"/>
+  <image source="qiNutRoom_tilesheet" width="224" height="176"/>
   <tile id="16">
    <animation>
     <frame tileid="16" duration="100"/>
@@ -5707,7 +5707,7 @@
   </tile>
  </tileset>
  <tileset firstgid="21564" name="samshowtiles" tilewidth="16" tileheight="16" tilecount="140" columns="10">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/samshowtiles" width="160" height="224"/>
+  <image source="samshowtiles" width="160" height="224"/>
   <tile id="124">
    <animation>
     <frame tileid="124" duration="550"/>
@@ -5728,13 +5728,13 @@
   </tile>
  </tileset>
  <tileset firstgid="21704" name="sebastianMountainTiles" tilewidth="16" tileheight="16" tilecount="1000" columns="40">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/sebastianMountainTiles" width="640" height="400"/>
+  <image source="sebastianMountainTiles" width="640" height="400"/>
  </tileset>
  <tileset firstgid="22704" name="sebastianRideTiles" tilewidth="16" tileheight="16" tilecount="480" columns="30">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/sebastianRideTiles" width="480" height="256"/>
+  <image source="sebastianRideTiles" width="480" height="256"/>
  </tileset>
  <tileset firstgid="23184" name="SewerTiles" tilewidth="16" tileheight="16" tilecount="88" columns="8">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/SewerTiles" width="128" height="176"/>
+  <image source="SewerTiles" width="128" height="176"/>
   <tile id="56">
    <properties>
     <property name="Water" value="T"/>
@@ -5765,7 +5765,7 @@
   </tile>
  </tileset>
  <tileset firstgid="23272" name="mine_desert" tilewidth="16" tileheight="16" tilecount="384" columns="16">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/Mines/mine_desert" width="256" height="384"/>
+  <image source="Mines/mine_desert" width="256" height="384"/>
   <tile id="138">
    <properties>
     <property name="Type" value="Stone"/>
@@ -5778,10 +5778,10 @@
   </tile>
  </tileset>
  <tileset firstgid="23656" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="688" columns="16">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/walls_and_floors" width="256" height="688"/>
+  <image source="walls_and_floors" width="256" height="688"/>
  </tileset>
  <tileset firstgid="24344" name="stadium_tiles" tilewidth="16" tileheight="16" tilecount="76" columns="4">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/stadium_tiles" width="64" height="304"/>
+  <image source="stadium_tiles" width="64" height="304"/>
   <tile id="60">
    <animation>
     <frame tileid="60" duration="700"/>
@@ -5808,7 +5808,7 @@
   </tile>
  </tileset>
  <tileset firstgid="24420" name="submarine_tilesheet" tilewidth="16" tileheight="16" tilecount="528" columns="24">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/submarine_tilesheet" width="384" height="352"/>
+  <image source="submarine_tilesheet" width="384" height="352"/>
   <tile id="186">
    <properties>
     <property name="Water" value="T"/>
@@ -5944,7 +5944,7 @@
   </tile>
  </tileset>
  <tileset firstgid="24948" name="CarolineGreenhouseTiles" tilewidth="16" tileheight="16" tilecount="128" columns="8">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/CarolineGreenhouseTiles" width="128" height="256"/>
+  <image source="CarolineGreenhouseTiles" width="128" height="256"/>
   <tile id="96">
    <animation>
     <frame tileid="96" duration="100"/>
@@ -5977,10 +5977,10 @@
   </tile>
  </tileset>
  <tileset firstgid="25076" name="Festivals" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/Festivals" width="512" height="512"/>
+  <image source="Festivals" width="512" height="512"/>
  </tileset>
  <tileset firstgid="26100" name="WitchHutTiles" tilewidth="16" tileheight="16" tilecount="128" columns="8">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/WitchHutTiles" width="128" height="256"/>
+  <image source="WitchHutTiles" width="128" height="256"/>
   <tile id="32">
    <animation>
     <frame tileid="32" duration="1000"/>
@@ -6010,7 +6010,7 @@
   </tile>
  </tileset>
  <tileset firstgid="26228" name="witchSwampTiles" tilewidth="16" tileheight="16" tilecount="128" columns="8">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/witchSwampTiles" width="128" height="256"/>
+  <image source="witchSwampTiles" width="128" height="256"/>
   <tile id="4">
    <properties>
     <property name="Water" value="T"/>
@@ -6224,7 +6224,7 @@
   </tile>
  </tileset>
  <tileset firstgid="26356" name="mine_dark" tilewidth="16" tileheight="16" tilecount="288" columns="16">
-  <image source="D:/SDVModwork/Content (unpacked)/Maps/Mines/mine_dark" width="256" height="288"/>
+  <image source="Mines/mine_dark" width="256" height="288"/>
  </tileset>
  <layer id="1" name="Back" width="70" height="70">
   <data encoding="csv">
